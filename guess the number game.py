@@ -1,7 +1,7 @@
 t=1
 while  t==1:
     
-    print("\n hello there,","\n we will be playing guess the number!!","\n \n 1. you just need to guess numbers from 1-20 ","\n 2. follow the instructions to get to the number","\n 3. reach the number before 5 chances", "\n 4. enjoy!!","\U0001F609")
+    print("\n hello there,","\n we will be playing guess the number!!","\n \n 1. you just need to guess numbers from 1-20 ","\n 2. follow the instructions to get to the number","\n 3. reach the number in 5 chances", "\n 4. enjoy!!","\U0001F609")
     import random                           
     z=0
     
@@ -10,20 +10,22 @@ while  t==1:
     b=int(input())
     for u in range (5):
         if b>a:
-                print("\nguess lower","\U0001F910")
+                 print("\n\n\n\n\n\n\n\n\n\n\n\n\n\nyour guess",b," is wrong ,guess a lower number","\U0001F910",)
                 
         elif b<a:
-                print("\nguess higher","\U0001F910")
+                print("\n\n\n\n\n\n\n\n\n\n\n\n\n\nyour guess",b," is wrong ,guess a higher number","\U0001F910",)
                
         else:
-                print("\U0001f600","won  the game") 
+                print("\n\n\n\n\n\n\n\n\n\n\n\n\n"+" \U0001f600","won  the game in",u+1,"chances") 
                 z=1
                 break
                 
-        print(5-u,"chances left")
-        b=int(input("re enter input  "))
+       
+        if u<4: 
+            print(4-u,"chances left\n")
+            b=int(input("re enter input  "))
     if z==0:
-        print("\U0001F923","You lost the game") 
+        print("\n\n\n\n\n\n\n\n\n\n\n\n\nU0001F923 You lost the game") 
         print("The number was",a)
     j=input("do you want to replay  Y/N :")
     if j=="Y" or j=="y":
